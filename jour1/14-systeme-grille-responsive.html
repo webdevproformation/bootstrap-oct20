@@ -10,7 +10,36 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body>   
+      <!-- 
+          .container
+            .row
+                .col
+                .col-1 à 12
+                    contenu h1 / p / table ...
+            
+            il est possible d'ajouter au niveau des colonnes
+                .col- sm / md / lg / xl - 1 et 12 
 
+            sm => small device => smartphone
+            md => medium device => tablette
+            lg => large device => ecran ordinateur
+            xl => extra large device => grand écran ordinateur / télévision
+
+        en css => point de rupture (break point)     
+      -->
+      <style>
+          /* si vous voyez ce code dans une feuille css => point de rupture */
+          p{
+              color : red;
+          }
+          @media screen and (max-width:700px) {
+              /* je ne peux exécuter des règles css QUE si s'est écran ET l'écran à une largeur maximum de 700px */
+              p{
+                  color: blue;
+              }
+          }
+      </style>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sit minima labore atque nobis repudiandae ullam excepturi similique. Corrupti soluta asperiores exercitationem reprehenderit rem, quidem magni, necessitatibus animi temporibus natus, perferendis deserunt ratione maxime aliquid dignissimos consequatur sequi veniam vitae.</p>
   </body>
 </html>
