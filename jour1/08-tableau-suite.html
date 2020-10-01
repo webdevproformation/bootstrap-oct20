@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+        <!-- 
+            balises qui permettent de créer des tableaux
+            + 
+            Emmet pour créer des tableaux rapidement
+            tableau avec 3 lignes et 5 colonnes contenant chacune 2 mots 
+            table>tr*3>td*5>lorem2
+
+            table => commencer la mise forme du tableau
+            table-bordered : bordures à chaque cellule du tableau
+            styliser mon tableau => fond noir et texte soit en couleur blanche
+        -->
+        <table class="table table-bordered table-dark">
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Illo, ab.</td>
+                <td>Reprehenderit, deleniti.</td>
+                <td>Necessitatibus, sunt?</td>
+                <td>Amet, consequuntur?</td>
+            </tr>
+            <tr>
+                <td>Eos, libero!</td>
+                <td>Odio, non!</td>
+                <td>Possimus, molestias!</td>
+                <td>Veritatis, similique.</td>
+                <td>Fugiat, quas?</td>
+            </tr>
+            <tr>
+                <td>Quidem, ab.</td>
+                <td>Quasi, nobis.</td>
+                <td>Accusantium, veritatis.</td>
+                <td>Iusto, ut!</td>
+                <td>Aliquam, nulla.</td>
+            </tr>
+        </table>
+
+        <h2 class="h1">deuxième tableaux</h2>
+        <!-- deuxième tableau 
+            tableau > 3 lignes > 4 cellules > 1 mots
+            table>tr*3>td*4>lorem1
+
+            d'autres styles pour les tableaux
+            text- primary / secondary / warning / danger / success / dark / white / light 
+            table- primary / secondary / warning / danger / success / dark / white / light 
+            bg- primary / secondary / warning / danger / success / dark / white / light 
+            border- primary / secondary / warning / danger / success / dark / white / light 
+        -->
+
+        <table class="table table-primary">
+            <tr>
+                <td>Lorem.</td>
+                <td>Nam!</td>
+                <td>Maxime?</td>
+                <td>Ab.</td>
+            </tr>
+            <tr>
+                <td>Nostrum!</td>
+                <td>Fugit.</td>
+                <td>Quae.</td>
+                <td>Ab.</td>
+            </tr>
+            <tr>
+                <td>Qui!</td>
+                <td>Ipsam?</td>
+                <td>Nulla?</td>
+                <td>Incidunt.</td>
+            </tr>
+        </table>
+
+        <h2 class="h1">troisième tableau</h2>
+
+        <!-- 
+            tableau de 5 lignes > 3 cellules > 1 mots
+            mais pour la première ligne cellule de titre
+            table>thead>tr>th*3>lorem1 => 1ère ligne
+            tbody>tr*4>td*3>lorem1 => autres lignes du tableau
+        -->
+        <table class="table table-dark table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Lorem.</th> <!-- par défaut th sont en gras -->
+                    <th>Vitae!</th>
+                    <th>Rem?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lorem.</td>
+                    <td>Sed?</td>
+                    <td class="bg-success">In?</td>
+                </tr>
+                <tr>
+                    <td>Quaerat?</td>
+                    <td>Numquam!</td>
+                    <td>Quas?</td>
+                </tr>
+                <tr>
+                    <td>Ullam.</td>
+                    <td class="bg-danger">Sequi?</td>
+                    <td>Aliquam.</td>
+                </tr>
+                <tr>
+                    <td>Porro.</td>
+                    <td>Veniam!</td>
+                    <td>Laudantium!</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--
+            dernier tableau
+        -->
+        <h2 class="h1">Dernier tableau</h2>
+        <!-- 
+            table-striped => zebre une ligne sur 2,  dispose d'un fond de couleur 
+            table-hover => si je passe la souris sur une ligne du tableau => effet hover (assombrir la ligne) => facilement lire la tableau
+            table 4 lignes et 5 cellules 1 mot
+            table>tr*4>td*5>lorem1
+        -->
+        <table class="table table-bordered table-hover bg-primary text-danger">
+            <tr>
+                <td>Lorem.</td>
+                <td>Provident!</td>
+                <td>Sit!</td>
+                <td>Eos.</td>
+                <td>Magnam.</td>
+            </tr>
+            <tr>
+                <td>Fugiat.</td>
+                <td>Hic?</td>
+                <td>Doloribus.</td>
+                <td>Tempora!</td>
+                <td>Repudiandae?</td>
+            </tr>
+            <tr>
+                <td>A.</td>
+                <td>Sunt?</td>
+                <td>Asperiores?</td>
+                <td>Sit!</td>
+                <td>Totam.</td>
+            </tr>
+            <tr>
+                <td>Alias?</td>
+                <td>Aspernatur.</td>
+                <td>Blanditiis!</td>
+                <td>Incidunt?</td>
+                <td>Ratione.</td>
+            </tr>
+        </table>
+  </body>
+</html>
