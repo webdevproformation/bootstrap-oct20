@@ -127,11 +127,18 @@
             table-hover => si je passe la souris sur une ligne du tableau => effet hover (assombrir la ligne) => facilement lire la tableau
             table 4 lignes et 5 cellules 1 mot
             table>tr*4>td*5>lorem1
+
+            table-light et table-dark
+            table-light et table-black
+
         -->
         <style>
             .thead-speciale:hover{
                 background: #454d55;
                 color: white;
+            }
+            .img-darker:hover{
+                filter: brightness(50%);
             }
         </style>
         <table class="table table-bordered bg-primary table-hover text-danger">
@@ -157,7 +164,7 @@
                 <td>Totam.</td>
             </tr>
             <tr>
-                <td>Alias?</td>
+                <td><img src="https://via.placeholder.com/20x20" alt="" class="img-darker"></td>
                 <td>Aspernatur.</td>
                 <td>Blanditiis!</td>
                 <td>Incidunt?</td>
