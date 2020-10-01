@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        header{
+            border:2px solid rgb(2, 209, 112);
+        }
+         section{
+            border:2px solid rgb(255, 0, 0);
+        }
+        div{
+            border:1px solid black;
+        }
+
+        p{
+            border:1px solid blue;
+        }
+        .marge-image{
+            margin-left: 100px;
+        }
+        .parent-img{
+            position: relative;
+        }
+
+        .img-bottom{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <!-- 
+        suite du système de grille 
+        .container  
+            lignes  balise .row
+                balise .col => cellule 
+                    elements h1 / p / image / tableau / liste
+        
+        2 l'équipe encharge de bootstrap => dans une row au maximum on peut avoir 12 cellules de design
+
+        3 si on utilise .col <= regarder si il y a d'autres cellules dans la ligne
+            si il y a une seule col => prendre 100% de la largeur de la  row
+            si il y a deux col => prendre chacune 50%  de la largeur de la  row
+            si il y a trois col => prendre chacune 33.333333%  de la largeur de la  row
+            si il y a quatre col => prendre chacune 25%  de la largeur de la  row
+
+        4 il est possible de préciser au moment où on créé la colonne quelle largeur précisément je veux attribut
+
+        deux colonnes 
+            Mais la premier 25 % de la largeur de la ligne
+            Mais la deuxième 75 % de la largeur de la ligne
+            12/12 = 100%
+            9/12 = 75%
+            6/12  = 50%
+            4/12 = 33.333333%
+            3/12 = 25%
+            2/12 = 16.666666666%
+    -->
+    <div class="container">
+        <header class="row">
+            <div class="col-3">
+                <p class="bg-success">logo</p>
+            </div>
+            <div class="col-9">
+                <p class="bg-danger">menu</p>
+            </div>
+        </header>
+        <section class="row pt-2">
+            <div class="col-3">
+                <img src="https://via.placeholder.com/700x400" alt="" class="img-fluid m-2">
+            </div>
+            <div  class="col-6">
+                <p class="bg-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus delectus magnam quia, architecto amet, tempora harum explicabo reprehenderit totam ex error atque repellat inventore magni sit? Aspernatur ducimus nostrum quia.</p>
+            </div>
+            <div  class="col-3 parent-img">
+                <img src="https://via.placeholder.com/200x100" alt="" class="img-fluid img-bottom">
+            </div>
+        </section>
+    </div>
+  </body>
+</html>
