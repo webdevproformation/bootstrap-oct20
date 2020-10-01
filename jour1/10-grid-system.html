@@ -11,6 +11,112 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    
+    <!--
+        présenter l'ESPRIT de la librairie Bootstrap 
+        1 appel un fichier css => de nombreuses class 
+        2 pour vos balises html une ou plusieurs class qui vont permettre de réaliser une ou plusieurs mise en forme 
+        --------------------------------
+
+        le système de grille => toutes les balises que l'on vient de voir
+        p h1 h2 table img => ce sont de balises qui vont contenir les informations de la page
+
+        autour de ces balises, on va utiliser dans balises qui vont servir comme charpente / zone 
+        pour chaque partie de la page 
+
+        header  
+        footer
+        aside
+        nav 
+        article
+        section 
+        address
+        div 
+
+        => toutes ces balises => rôle dans la page htm définir des zones 
+
+        => choix chez Bootstrap 
+        Tout le contenu d'une page doit être dans une balises unique qui la class .container
+    -->
+    <div class="container <!--border border-primary -->"> <!-- celle balise va contenir l'ensemble de toutes la balises visibles de la page 
+    => reponsive design !!
+    -->
+        <h1 class="bg-success">Système de grille</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti sed possimus. Corporis magni veritatis hic, sed assumenda doloribus itaque est dicta magnam quisquam cumque inventore corrupti dolore cum similique unde reiciendis doloremque impedit totam alias perferendis temporibus quas sapiente.</p>
+        <h2 class="bg-warning">suite</h2>
+        <!-- 
+            deux paragraphes => prendre 50% de la largeur 
+            de la zone disponible
+        -->
+        <div class="row"><!-- balise => ligne de design-->
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nihil earum adipisci magni labore rerum voluptas culpa, distinctio laborum excepturi!</p>
+            </div>
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nihil earum adipisci magni labore rerum voluptas culpa, distinctio laborum excepturi!</p>
+            </div>
+        </div>
+        <section class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae?</p>
+            </div>
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae?</p>
+            </div>
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae?</p>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col">
+                <h3>un tableau</h3>
+                <table class="table table-dark">
+                    <tr>
+                        <td>Lorem, ipsum dolor.</td>
+                        <td>Hic, aspernatur velit?</td>
+                    </tr>
+                    <tr>
+                        <td>Temporibus, fuga quaerat.</td>
+                        <td>Hic, facere perferendis?</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <h3>des images</h3>
+                <img src="https://via.placeholder.com/200x100" alt="" class="img-thumbnail">
+                <img src="https://via.placeholder.com/200x100" alt="" class="img-thumbnail">
+            </div>
+        </section>
+    </div>
   </body>
 </html>
+
+<!--
+    .container
+        .row => ligne de design
+            .col
+            .col
+            .col 
+            .col jusqu'à 12 
+                ici que vous allez écrire h1 p tableau img 
+    
+    
+    créer le fichier 11-exo.html 
+    
+    .container 
+        zone n°1 entete du site 
+            3 colonnes identiques (même largeur)
+            colonne1 contient logo - fond vert
+            colonne2 contient menu - fond rouge
+            colonne3 contient bouton facebook - fond bleu
+        
+        zone n°2 contenu
+            deux colonnes (même largeur)
+            colonne 1 contient : article - fond noir et texte blanc
+            colonne 2  contient : barre de latérale de menu - fond gris
+
+        zone n°3 pied de page
+            deux colonnes (même largeur)
+            colonne 1 lien mention légale du site - fond rouge
+            colonne 2 formulaire de contact - fond bleu
+
+-->
