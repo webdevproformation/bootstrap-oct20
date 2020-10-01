@@ -128,8 +128,14 @@
             table 4 lignes et 5 cellules 1 mot
             table>tr*4>td*5>lorem1
         -->
-        <table class="table table-bordered table-hover bg-primary text-danger">
-            <tr>
+        <style>
+            .thead-speciale:hover{
+                background: #454d55;
+                color: white;
+            }
+        </style>
+        <table class="table table-bordered bg-primary table-hover text-danger">
+            <tr class="thead-speciale">
                 <td>Lorem.</td>
                 <td>Provident!</td>
                 <td>Sit!</td>
