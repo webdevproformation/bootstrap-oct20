@@ -11,6 +11,117 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    
+    <!-- 
+        grille => layout (mise en page)
+        content => typographie / image / tableau
+        Utilities => class utilitaire => utiliser sur n'importe quelles balises
+    -->
+    <div class="container">
+        <header class="row">
+            <div class="col-2">
+                <img src="https://via.placeholder.com/80x80?text=logo" alt="" class="rounded-circle mt-md-4">
+                <!-- 
+                    elle est collé au bord la page web
+                    espacer via une marge 
+                    documentation > Utilities > Spacing 
+                    marge en haut uniquement mt-0 et 5 = margin-top
+                    marge en bas uniquement mb-0 et 5 = margin-bottom
+                    marge à droite uniquement mr-0 et 5 = margin-right
+                    marge à gauche uniquement ml-0 et 5 = margin-left
+
+                    marge gauche et droite simultanément  mx-0 et 5 
+                    margin en haut et en bas simultanément   my-0 et 5 
+                    margin 4 cotes                    m-0 et 5 
+
+                    d-inline-block
+                    d-block
+                    d-inline
+                    d-flex
+
+                    padding en haut uniquement pt-0 et 5 = margin-top
+                    padding en bas uniquement pb-0 et 5 = margin-bottom
+                    padding à droite uniquement pr-0 et 5 = margin-right
+                    padding à gauche uniquement pl-0 et 5 = margin-left
+
+                    padding gauche et droite simultanément  px-0 et 5 
+                    padding en haut et en bas simultanément   py-0 et 5 
+                    padding 4 cotes                    p-0 et 5 
+
+                    aussi possibilité d'ajouter des points de rupture
+                    sm / md / lg / xl 
+                    dès que le point de rupture est atteint =>
+                    5 => 0
+
+                    auto
+                -->
+            </div>
+            <div class="col-10">
+                <div class="">
+                    <a href="#" class="mr-5 align-top">Accueil</a>
+                    <a href="#"class="mt-5 d-inline-block">Présentation</a>
+                </div>
+            </div>
+        </header>
+        <!-- 
+            mr-auto
+            ml-auto
+        -->
+        <section class="row mt-4">
+            <div class="col-2">
+                <img src="https://via.placeholder.com/80x80?text=logo" alt="" class="rounded-circle">
+            </div>
+            <div class="col-2 ml-auto d-flex align-items-center">
+                <img src="https://via.placeholder.com/30x30?text=fb" alt="" class="rounded-circle">
+                <img src="https://via.placeholder.com/30x30?text=t" alt="" class="rounded-circle">
+            </div>
+        </section>
+
+        <!-- 
+            mx-auto
+        -->
+
+        <section class="row mt-4 justify-content-center">
+            <!-- 12 - 3 = 9 / 2     4.5-->
+            <div class="col-3">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam delectus magnam nulla in iusto quod rerum, atque omnis quis, minus consequuntur adipisci odio nesciunt beatae, inventore facere accusantium cupiditate distinctio eos assumenda minima itaque provident quos! Cupiditate modi tenetur dolor praesentium numquam, quibusdam quos ratione maxime unde dolores nisi mollitia.</p>
+            </div>
+        </section>
+        <!-- 
+            mx-auto =>
+            prendre l'espace restant dans la ligne
+            répartir de manière égale à gauche et à droite 
+            de l'élément sélectionné 
+        -->
+        <section class="row mt-4">
+            <!-- 12 - 3 = 9 / 2 => la largeur 4.5 n'existe pas -->
+            <div class="col-3 mx-md-auto">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam delectus magnam nulla in iusto quod rerum, atque omnis quis, minus consequuntur adipisci odio nesciunt beatae, inventore facere accusantium cupiditate distinctio eos assumenda minima itaque provident quos! Cupiditate modi tenetur dolor praesentium numquam, quibusdam quos ratione maxime unde dolores nisi mollitia.</p>
+            </div>
+        </section>
+    </div>
   </body>
 </html>
+
+<!-- 
+    Créer un nouveau fichier 05-exo.html 
+
+    cette page html contient deux zones
+
+    zone1 
+        4 cellules de design de largeur 3
+            à l'intérieur vous avez ce que vous voulez p / img 
+            la 2ème et la 4ème cellule dispose d'une marge en haut de 5
+
+    zone 2
+        2 cellules 
+        
+            largeur de 3 =>  
+                contenu de votre choix
+            largeur de 4
+                contenu de votre choix
+
+        faire en sorte que l'espace entre ces deux colonnes soit mis entre
+        les deux colonnes (et non à la suite)
+
+
+-->
