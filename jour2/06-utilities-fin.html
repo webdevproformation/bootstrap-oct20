@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- 
+        vous avez besoin d'ajouter des bordures à une balise
+        border => 4 cotés
+        border-top => en haut uniquement
+        border-bottom => en bas uniquement
+        border-right => à droite uniquement
+        border-left => à gauche uniquement
+    -->
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-3">
+                <img src="https://via.placeholder.com/600x400" alt="" class="img-fluid">
+            </div>
+            <div class="col-3">
+                <img src="https://via.placeholder.com/600x400" alt="" class="img-fluid border border-danger">
+            </div>
+            <div class="col-3">
+                <h1 class="border-right">Hello</h1>
+                <h1> <span class="border-right pr-2">Hello</span>   </h1>
+                <p class="border-bottom">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-3">
+                <p class="border border-danger">Lorem, ipsum dolor.</p>
+                <p class="border border-warning">Doloribus, soluta ea!</p>
+                <p class="border border-success px-2" >At, ut autem?</p>
+                <p class="border border-secondary">Repellat, odio ea?</p>
+                <p class="border border-dark bg-dark text-light p-3">Eaque, id explicabo!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- toutes les couleurs que l'on utilise depuis le début => utilitaires -->
+
+    <!-- 
+        utilitaire sizing 
+        permet de forcer la largeur des p / img / div 
+        w- => width 
+        h-
+        25 / 50 / 75 / 100 / auto 
+    -->
+    <div class="container">
+        <section class="row">
+            <div class="col-6 border border-primary">
+                <!-- element en ligne -->
+                <img src="https://via.placeholder.com/600x400" alt="" class="w-25">
+                <a href="#">lire la suite</a>
+            </div>
+            <div class="col-6 border border-primary">
+                <!-- element en ligne -->
+                <img src="https://via.placeholder.com/600x400" alt="" class="w-50">
+                <a href="#">lire la suite</a>
+            </div>
+            <div class="col-6 border border-primary">
+                <!-- element en ligne -->
+                <img src="https://via.placeholder.com/600x400" alt="" class="w-75">
+                <a href="#">lire la suite</a>
+            </div>
+        </section>
+        <!-- 
+            .row => display flex
+        -->
+        <section class="row mt-4">
+           <div class="col-4">
+                <article>
+                    <header class="d-flex align-items-center">
+                        <h2 class="w-75">Un titre un peu plus long</h2>
+                        <time class="w-25 d-flex">
+                            <small class="ml-auto">01/01/2020</small>
+                        </time> 
+                    </header>
+                    <img src="https://via.placeholder.com/600x400" alt="" class="img-fluid img-thumbnail mb-2">
+                    <p class="w-100 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo, sint alias impedit ad sed eaque ullam? Provident harum facere magnam adipisci iste magni eaque iusto accusamus molestiae? Laudantium, vitae!</p> 
+                </article>
+           </div>
+        </section>
+        <!-- librairie + méthodo -->
+
+    </div>
+  </body>
+</html>
+
+<!--
+    créer le fichier 06-exo.html 
+    vous allez sur le site lemonde.fr
+    essayer en utilisant Twitter Bootstrap de reproduire le premier bloc => à la une 
+    => Grille // espacement 
+-->
