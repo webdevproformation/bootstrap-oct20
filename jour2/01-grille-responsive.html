@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+   <!-- 
+       - bien comprendre le système => point de rupture par type de matériel 
+       - norme => en général
+       entre 0 et 320px 
+       @media (max-width: 320px) { } => en smartphone portrait
+       entre 321px et 480px
+       @media (min-width: 321px) and (max-width: 480px) { } => smartphone paysage
+
+       @media (min-width: 481px) and (max-width: 768px) {} => tablette portrait
+       (Apple => le première Apple tablette largeur du matériel )
+
+        @media (min-width: 769px) and (max-width: 960px) { } => tablette paysage
+        => 960px écran à partir des 2010  
+
+        @media (min-width: 961px) { } écran d'ordinateur => téléviseur 
+
+        media Query 
+
+        smartphone => chrome => site bnp 
+        couche / calque qui apparait => tu as l'air d'être sur un smartphone => télécharger la version app mobile 
+
+        API => jquery 
+
+        2 versions du projet bancaire : app mobile  / site mobile internet 
+        séparé => problème de synchronisation entre les projets 
+
+        trois projets 
+        Serveur :
+        projet BASE de DONNEES  => API accessible depuis une adresse internet 
+        http://bnpparibas.com/login: azerty& mdp:1234 / comptecourant 
+        => JSON = tableau des soldes bancaires
+
+        http://bnpparibas.com/login: azerty& mdp:1234 / virement 
+        => JSON = tableau tes virements
+
+        ------ 
+
+        client 
+            Application mobile => store App Store => télécharger un logiciel 
+                C# // Android // Java // C // React Native
+
+            site web = Chrome / Firefox / Opera : adresse https://domininos.com
+                    html / css / js / PHP => appel $.getJSON()
+                    lire sur les smartphones
+                    lire sur les tablettes
+                    lire sur les PC
+            avec les mediaquery @media{ }
+        
+        Manière de faire des projets => Architecture 2 tiers 
+
+        si largeur > 600px => 2 colonnes 
+        à partir du moment où on attent 600px => 
+        2 colonnes mais l'un en dessous de l'autre 
+   -->  
+        <style>
+            div{
+                border:1px solid black;
+            }
+        </style>
+        <div class="container">
+            <section class=" row">
+                <div class="col">
+                    <h2>Présentation</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, voluptas exercitationem? Id nobis molestiae architecto quia dolore laborum. Ipsam aspernatur suscipit similique optio eaque quidem ex rerum voluptatibus assumenda non, numquam exercitationem quibusdam enim commodi possimus nobis corporis, consequatur consequuntur.</p>
+                </div>
+                <div class="col">
+                    <img src="https://via.placeholder.com/400x300" alt="" class="img-fluid">
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="col-sm-6">
+                    <h2>Présentation 2</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, voluptas exercitationem? Id nobis molestiae architecto quia dolore laborum. Ipsam aspernatur suscipit similique optio eaque quidem ex rerum voluptatibus assumenda non, numquam exercitationem quibusdam enim commodi possimus nobis corporis, consequatur consequuntur.</p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <img src="https://via.placeholder.com/400x300" alt="" class="img-fluid">
+                </div>
+            </section>
+            <!-- 
+                du responsive design !
+                introduit => point de rupture sur la grille qui contient les éléments visuels
+                => 
+                display flex 
+                display grid 
+            -->
+        </div>
+  </body>
+</html>
+
+<!-- 
+    créer le fichier 02-exo.html
+
+    .container 
+            zone n°1 : 3 colonnes 
+                colonne n°1 largeur 2 colonnes point de rupture md / lorem20
+                 colonne n°2 largeur 4 colonnes  point de rupture md / image fluide 200x150
+                colonne n°3 largeur 6 (= 12 -4 -2)   point de rupture md / lorem20
+            
+                zone n°2 : 2 colonnes 
+                 colonne n°1 largeur 6 rupture sm / lorem40
+                 colonne n°2 largeur 6 rupture sm / image fluide 400x400
+  
+            pour ceux qui ont fini tester votre design en réduisant et agrandissant votre navigateur web (via le bouton adaptatif)
+
+
+-->
